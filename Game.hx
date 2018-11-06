@@ -1,10 +1,13 @@
-import issue.JsonChild;
-
 class Game extends hxd.App
 {
     static function main()
     {
-        var root:JsonChild = new JsonChild(null, 0);
+        var array:issue.Array<Dynamic> = [];
+        if (array[0] != null)
+        {
+            trace(array[0].length);
+        }
+
         trace("Success!!!");
     }
 }
